@@ -8,7 +8,7 @@ import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Vercel Times",
+  title: "The Vercel Times",
   description: "Latest news from around the world",
 };
 
