@@ -1,5 +1,7 @@
 import { getNewsArticles } from "@/lib/contentful";
 import { NewsCard } from "@/components/news-card";
+import { LinkUnfurl } from "@/components/LinkUnfurl";
+import { Suspense } from "react";
 
 export default async function Home() {
   const articles = await getNewsArticles();
@@ -11,7 +13,11 @@ export default async function Home() {
           {articles.map((article) => (
             <NewsCard key={article.slug} article={article} />
           ))}
+          <Suspense>
+            <LinkUnfurl url="https://nextjs.org" />
+          </Suspense>
         </div>
+        
       </main>
     </div>
   );
