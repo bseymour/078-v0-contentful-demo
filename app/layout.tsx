@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "The Vercel Times",
-  description: "Latest news from around the world",
+  description: "Latest news from around the Vercel and Next.js",
 };
 
 export default function RootLayout({
