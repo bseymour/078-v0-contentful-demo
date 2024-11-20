@@ -8,6 +8,14 @@ const nextConfig: NextConfig = {
         hostname: "images.ctfassets.net",
         protocol: "https",
       },
+      {
+        hostname: "*.vercel.com",
+        protocol: "https",
+      },
+      {
+        hostname: "*.vercel.sh",
+        protocol: "https",
+      },
     ],
   },
   experimental: {
